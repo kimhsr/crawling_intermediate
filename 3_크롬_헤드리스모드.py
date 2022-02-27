@@ -10,9 +10,9 @@ browser.get("https://logins.daum.net/accounts/signinform.do?url=https%3A%2F%2Fww
 
 # 로그인 하기
 id = browser.find_element_by_css_selector("input#id")
-id.send_keys("talingpython")
+id.send_keys("본인_아이디_입력")
 pw = browser.find_element_by_css_selector("input#inputPwd")
-pw.send_keys("q1w2e3!@#")
+pw.send_keys("본인_비밀번호_입력")
 button = browser.find_element_by_css_selector("button#loginBtn")
 button.click()
 time.sleep(3)  # 로그인될 때까지 3초
